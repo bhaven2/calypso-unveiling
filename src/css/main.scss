@@ -38,29 +38,35 @@ ul#countdown {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 50%;
+  width: 75%;
   margin: 0 auto;
-  padding: 15px 0 20px 0;
+  padding: 5px 0 5px 0;
   color: #fff;
   border: 1px solid #adafb2;
   border-width: 1px 0;
-//   overflow: hidden;
-  font-family: 'gothamblack';
-//   font-weight: bold;
+  overflow: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  justify-content: space-evenly;
+  display: flex;
+
   
   li {
-    margin: 0 -5px 0 0;
-    padding: 0;
-    display: inline-block;
-    width: 25%;
-    font-size: 72px;
-    font-size: 6vw;
+    // margin: 0 -5px 0 0;
+    // padding: 0 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    // font-size: 128px;
+    font-size: 10vw;
     text-align: center;
+    text-decoration: none;
     
     .label {
       color: #adafb2;
-      font-size: 18px;
-      font-size: 1.5vw;
+      // font-size: 18px;
+      font-size: 3vw;
       text-transform: uppercase;
     }
   }
@@ -85,7 +91,7 @@ ul#countdown {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: textclip 5s linear infinite;
-    font-size: 128px;
+    font-size: 156px;
     font-style: italic;
     font-family:Arial, Helvetica, sans-serif;
     z-index: 1;
@@ -109,12 +115,13 @@ ul#countdown {
     color: #fff;
     padding: 0px 0px 0px 25px;
     font-size: 48px;
+    font-style: italic;
 
 }
 
 .scaled-svg
 {
-    width: 5%; /* Adjust as needed */
+    width: 10%; /* Adjust as needed */
     height: auto; /* Maintain aspect ratio */
     position: absolute;
     bottom: 0;
@@ -124,7 +131,7 @@ ul#countdown {
 
 .scaled-svg2
 {
-    width: 30%; /* Adjust as needed */
+    width: 40%; /* Adjust as needed */
     height: auto; /* Maintain aspect ratio */
     position: absolute;
     opacity: 0.25;
@@ -137,12 +144,12 @@ ul#countdown {
     flex-direction: column; /* Stack items vertically */
     justify-content: center; /* Center horizontally */
     align-items: center; /* Center vertically */
-    margin-top: 200px; /* Adjust the value to control the distance from the top */
+    margin-top: 118px; /* Adjust the value to control the distance from the top */
 }
 
 .scaled-png
 {
-    width: 13%;
+    width: 15%;
     height: auto;
     /* Position in the bottom right corner */
     position: absolute;
@@ -151,4 +158,28 @@ ul#countdown {
     transform: translateX(-50%);
     /* Optionally, you can apply styles like width, height, text alignment, etc. */
     padding: 0px 0px 25px 0px;
+}
+
+.title
+{
+  color:white;
+  font-style: italic;
+  padding: 0px 0px 0px 0px;
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 56px;
+}
+
+.description
+{
+  color:white;
+  font-style: italic;
+  padding: 0px 0px 0px 0px;
+  position: absolute;
+  top: 27%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 32px;
 }
