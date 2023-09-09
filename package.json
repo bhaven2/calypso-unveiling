@@ -4,7 +4,7 @@
   "description": "countdown for CIF video board",
   "scripts": {
     "start": "webpack-dev-server",
-    "build": "export NODE_OPTIONS=--openssl-legacy-provider; webpack"
+    "build": "webpack"
   },
   "author": "Bhaven Shah",
   "license": "Illini Solar Car",
